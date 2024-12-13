@@ -6,26 +6,54 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Application Form</h1>
-    <label >Name : </label>
-    <input type="text" placeholder="Enter Name"/><br/>
-    <label>Age : </label>
-    <input type="number" placeholder="Enter Age"/><br/>
-    <label >DOB : </label>
-    <input type="date" placeholder="Enter DOB"/><br/>
-    <label>Gender : </label>
-    <input type="radio" id="male" name="gender"/>
-    <label for="male">male</label>
-    <input type="radio" id="female" name="gender"/>
-    <label for="female">Female</label><br/>
-    <label>Mobile No : </label>
-    <input type="number" placeholder="Enter Mobile NO"/><br/>
-    <label>Email : </label>
-    <input type="mail" placeholder="Enter Email id"/><br/>
-    <label>Password : </label>
-    <input type="password" placeholder="Enter Password"/><br/>
-    <label>Confirm Password</label>
-    <input type="password" placeholder="Confirm Password"/><br/>
-    <button border="0px">submit</button>
+    <form>  
+        <h1>Application Form</h1>
+        <fieldset>
+            <legend>user data</legend>
+            <label for="name">Name : </label>
+            <input type="text" placeholder="Enter Name" id="name" /><br/>
+            <label for="age">Age : </label>
+            <input type="number" placeholder="Enter Age" id="age"/><br/>
+            <label for="dob">DOB : </label>
+            <input type="date" placeholder="Enter DOB" id="dob"/><br/>
+            <label>Gender : </label>
+            <input type="radio" id="male" name="gender"/>
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender"/>
+            <label for="female">Female</label><br/>
+            <label for="mobile">Mobile No : </label>
+            <input type="number" id="mobile" placeholder="Enter Mobile NO"/><br/>
+            <label for="email">Email : </label>
+            <input id="email" type="mail" placeholder="Enter Email id"/><br/>
+            <label for="password">Password : </label>
+            <input id="password" type="password" placeholder="Enter Password"/><br/>
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" type="password" placeholder="Confirm Password"/><br/>
+            <select name="country">
+                <option>india</option>
+                <option>US</option>
+                <option>UK</option>
+                <option>Canada</option>
+                <option>pakistan</option>
+            </select>
+            <select>
+                <optgroup label="cars">
+                    <option>swift</option>
+                    <option>benz</option>
+                </optgroup>
+                <optgroup label="bikes">
+                    <option>duke</option>
+                    <option>pulsar</option>
+                </optgroup>
+            </select><br/>
+            <datalist id="countries" border="1px">
+                <option value="india"></option>
+                <option value="US"></option>
+                <option value="UK"></option>
+                <option value="Canada"></option>
+            </datalist>
+            <button>submit</button>
+    </fieldset>
+    </form>
 </body>
 </html>

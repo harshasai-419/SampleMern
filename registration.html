@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+       <center><h1><b>Registration Form </b></h1></center> 
+       <fieldset>
+        <legend>Register</legend>
+       <form>
+            <b><label for="name">Name : </label></b>
+            <input placeholder="Enter Name" id="name" type="text"/><br/><br/>
+            <b><label for="age">Age : </label></b>
+            <input placeholder="Enter Age" id="age" type="number"/><br/><br/>
+            <b><label for="dob">DOB : </label></b>
+            <input type="date" id="dob"/><br/><br/>
+            <b><label>Gender : </label></b>
+            <input type="radio" id="male" name="gender"/>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender"/>
+            <label for="female">Female</label><br/><br/>
+            <b><label for="mobile">Mobile No : </label></b>
+            <input type="number" placeholder="Enter mobile no" id="mobile"/><br/><br/>
+            <b><label for="country">Country : </label></b>
+            <select id="country">
+                <option value="America">America</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="Europe">Europe</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="India">India</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Korea">Korea</option>
+                <option value="pakistan">pakistan</option>
+            </select><br/><br/>
+            <b><label for="email">Email : </label></b>
+            <input type="mail" placeholder="Enter email id" id="email"/><br/><br/>
+            <b><label for="password">Password : </label></b>
+            <input id="password" placeholder="Enetr password" type="password"/><br/><br/>
+            <b><label for="confirmPassword">Confirm Password : </label></b>
+            <input type="password" placeholder="confirm password" id="confirmPassword"/><br/><br/>
+            <b><label>Skills : </label></b><br/>
+            <input type="checkbox" id="html"/>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css"/>
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js"/>
+            <label for="js">JAVASCRIPT</label><br/><br/>
+            <b><label for="feedback">Feedback : </label></b><br/>
+            <textarea id="feedback"></textarea><br/><br/>
+            <button>submit</button>
+            <button>Reset</button>
+       </form>
+    </fieldset>
+    </div>
+</body>
+</html>
